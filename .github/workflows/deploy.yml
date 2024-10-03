@@ -22,6 +22,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+      
+      - name: Check current directory
+        run: pwd  # Kontrollera nuvarande katalog
+
+      - name: List contents of the frontend directory
+        run: ls -R ./frontend  # Kontrollera om package.json finns
 
       - name: Install Dependencies
         working-directory: ./frontend
@@ -44,6 +50,9 @@ jobs:
 
       - name: List directory contents before deploy
         run: ls -R  # Lista alla filer innan deploy
+
+      - name: List contents of the frontend directory before deploy
+        run: ls -R ./frontend  # Kontrollera om package.json finns innan deploy
 
       - name: Copy file to EC2
         uses: appleboy/scp-action@master
