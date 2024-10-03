@@ -21,15 +21,15 @@ jobs:
           node-version: "20"
 
       - name: List frontend directory
-        working-directory: ./frontend
+        working-directory: ./chasacademy-banksite-2024/frontend
         run: ls -l
 
       - name: Install Dependencies
-        working-directory: ./frontend
+        working-directory: ./chasacademy-banksite-2024/frontend
         run: npm install
 
       - name: Run Tests
-        working-directory: ./frontend
+        working-directory: .chasacademy-banksite-2024/frontend
         run: npm run test
         env:
           test: true
