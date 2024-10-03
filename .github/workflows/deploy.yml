@@ -22,8 +22,8 @@ jobs:
 
       - name: List frontend directory
         working-directory: ./frontend
-        run: | 
-          bash: -c "ls -l"
+        run: ls l
+          shell: bash
 
       - name: Install Dependencies
         working-directory: ./frontend
