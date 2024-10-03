@@ -25,7 +25,7 @@ jobs:
         run: ls -l
 
       - name: Install Dependencies
-        working-directory: ./
+        working-directory: ./frontend
         run: npm install
 
       - name: Run Tests
