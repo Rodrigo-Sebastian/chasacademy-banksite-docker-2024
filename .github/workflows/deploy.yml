@@ -20,9 +20,6 @@ jobs:
         with:
           node-version: "20"
 
-      - name: List frontend directory
-        working-directory: ./chasacademy-banksite-2024/frontend
-        
       - name: Install Dependencies
         working-directory: ./chasacademy-banksite-2024/frontend
         run: npm install
