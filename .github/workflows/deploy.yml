@@ -52,8 +52,8 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           port: 22
-          source: "./frontend" #sätt att bara kopiera frontend
-          target: "/home/ubuntu/chasacademy-banksite-2024"
+          source: "./frontend"
+          target: "/home/ubuntu/chasacademy-banksite-2024/frontend"
 
       - name: Run Docker on EC2
         uses: appleboy/ssh-action@master
