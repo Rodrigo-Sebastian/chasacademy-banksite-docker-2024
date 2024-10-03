@@ -47,6 +47,8 @@ jobs:
     steps:
       - name: check out Repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Hämta hela historiken, om du behöver det
 
       - name: List directory contents before deploy
         run: ls -R  # Lista alla filer innan deploy
