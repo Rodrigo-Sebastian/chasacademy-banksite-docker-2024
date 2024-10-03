@@ -25,7 +25,7 @@ jobs:
         run: ls -l
 
       - name: Install Dependencies
-        working-directory: ./frontend
+        working-directory: ./
         run: npm install
 
       - name: Run Tests
@@ -51,7 +51,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           source: "."
-          target: "/home/ubuntu/chasacademy-banksite-2024/frontend"
+          target: "/home/ubuntu/chasacademy-banksite-2024"
 
       - name: Run Docker on EC2
         uses: appleboy/ssh-action@master
