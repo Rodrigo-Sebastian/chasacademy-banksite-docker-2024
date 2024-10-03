@@ -21,11 +21,11 @@ jobs:
           node-version: "20"
 
       - name: Install Dependencies
-        working-directory: .
+        working-directory: frontend
         run: npm install
 
       - name: Run Tests
-        working-directory: .
+        working-directory: frontend
         run: npm run test
         env:
           test: true
