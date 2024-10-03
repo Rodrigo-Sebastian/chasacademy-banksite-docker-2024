@@ -21,11 +21,11 @@ jobs:
           node-version: "20"
 
       - name: Install Dependencies
-        working-directory: ./chasacademy-banksite-2024
+        working-directory: .
         run: npm install
 
       - name: Run Tests
-        working-directory: .chasacademy-banksite-2024
+        working-directory: .
         run: npm run test
         env:
           test: true
