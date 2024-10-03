@@ -22,7 +22,7 @@ jobs:
 
       - name: List frontend directory
         working-directory: ./frontend
-        run: ls l
+        run: ls -l
 
       - name: Install Dependencies
         working-directory: ./frontend
