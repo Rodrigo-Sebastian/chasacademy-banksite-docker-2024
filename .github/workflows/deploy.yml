@@ -22,8 +22,7 @@ jobs:
 
       - name: List frontend directory
         working-directory: ./chasacademy-banksite-2024/frontend
-        run: ls -l
-
+        
       - name: Install Dependencies
         working-directory: ./chasacademy-banksite-2024/frontend
         run: npm install
